@@ -4,3 +4,19 @@ div {
     border: 3px solid black;
   }
 
+  .two {
+    position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+   .three {
+    position: absolute;
+    bottom: 0px;
+   }
+    .four{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    
+    }
+   
