@@ -1,0 +1,18 @@
+.vital {
+    color: red;
+    font-weight: bold;
+}
+
+.liste{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    
+}
+
+.invitees{
+    position: absolute;
+    top: 250px;
+    left: 500px;
+
+}

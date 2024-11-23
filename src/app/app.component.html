@@ -10,12 +10,17 @@
 
 
 <main class="main">
-  <div class="one">{{div}}</div>
-  <div class="two">{{div}}</div>
-  <div class="three">{{div}}</div>
-  <div class="four">{{div}}</div>
-  
 
+  <ul>
+    <li>
+      <a [routerLink]="['/Exercice 1']">Exercice 1</a>
+    </li>
+    <li>
+      <a [routerLink]="['/Exercice 2']">Exercice 2</a>
+    </li>
+  </ul>
+  
+  <router-outlet></router-outlet>
 
 </main>
 
@@ -27,5 +32,4 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-mon-composant/>
 <router-outlet />

@@ -4,3 +4,44 @@
 <p [hidden]="!user.hidden">Age : {{user.age}}</p>
 <input type="text" [(ngModel)]="user.quote">
 <button class="button" (click)="user.hidden = false">Afficher/Masquer mon âge</button>
+
+
+
+
+<! -- L'attribute directive [ngStyle]  -->
+
+
+
+<ul class="liste" >
+    <li>Pomme de terre</li>
+    <li [ngStyle]="{backgroundColor:isThisIngredientVital ? 'red' : 'yellow'}">Raclette</li>
+    <li>Jambon</li>
+    <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
+    <li>Chou Fleur</li>
+</ul>
+
+
+
+
+
+<! -- La structural directive *ngIf -->
+
+
+<ul class="invitees" *ngIf="isGuestListDisplayed">
+    <li>Brenda</li>
+    <li>Dylan</li>
+    <li>Michel Drucker</li>
+    <li>Marc Aurèle</li>
+    <li>Julie</li>
+</ul>
+
+
+
+<ul>
+    <li *ngFor="let song of songList">
+        {{song}}
+    </li>
+</ul>
+
+
+<router-outlet></router-outlet>
