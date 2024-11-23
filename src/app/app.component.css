@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 50px;
+    align-items: center;
+}
+
+li {
+    list-style: none;   
+    
+}
+
+a {
+    
+    padding-top: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large; 
+    color: gray;
+    
+}
+
