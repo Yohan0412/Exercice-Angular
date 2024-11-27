@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Order } from '../Models/order.model';
 import { FormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
@@ -23,6 +23,7 @@ export class MyFormComponent {
     // Formulaire envoyé
     console.log(this.newOrder);
   }
+ 
 
 
 }
