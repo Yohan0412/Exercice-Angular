@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -37,4 +37,14 @@ export class MagicOvenComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
+  @Output()
+  cookies: EventEmitter<number> = new EventEmitter(); 
+
+  sendCookies() {
+    this.cookies.emit(this.numberOfCookies);
+  }
+
+
 }

@@ -23,6 +23,7 @@ export class KitchenComponent {
   numberOfCookies: number = 0;
 
   isCooked: boolean = false;
+  
 
   constructor() {}
 
@@ -31,4 +32,11 @@ export class KitchenComponent {
   startCooking() {
     this.isCooked = true;
   }
+
+  cookiesCooked: number | undefined;
+
+  onGetCookies(event: number): void {
+    this.cookiesCooked =+ event;
+  }
+
 }
