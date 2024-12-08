@@ -5,6 +5,8 @@ import { MyFormComponent } from './my-form/my-form.component';
 import { MyHomeComponent } from './my-home/my-home.component';
 import { Component } from '@angular/core';
 import { KitchenComponent } from './kitchen/kitchen.component';
+import { UseerComponent } from './useer/useer.component';
+
 
 export const routes: Routes = [
     
@@ -12,5 +14,6 @@ export const routes: Routes = [
     {path:'Exercice 1', component: Exercice1Component },
     {path:'Exercice 2', component: MonComposantComponent  },
     {path: 'Formu', component: MyFormComponent},
-    {path: 'Exercice 7', component: KitchenComponent}
+    {path: 'Exercice 7', component: KitchenComponent},
+    {path: 'Formulaire' , component: UseerComponent},
 ];
